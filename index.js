@@ -1,7 +1,7 @@
 const Nightmare = require('nightmare');
 const fs = require('fs');
 const nightmare = Nightmare({
-    show: true,
+    show: false,
     typeInterval: 1
 });
 
@@ -69,9 +69,9 @@ function loginLinkedin(email, password, keyword) {
                                     .wait('button[data-control-name="contact_see_more"]')
                                     .click('button[data-control-name="contact_see_more"]')
                                     .evaluate(function() {
-                                        const nameAndEamil =  {
-                                        	name: $('.pv-top-card-section__name').text(),
-                                        	email: $('.pv-contact-info__contact-type.ci-email .pv-contact-info__contact-item').text()
+                                        const nameAndEamil = {
+                                            name: $('.pv-top-card-section__name').text(),
+                                            email: $('.pv-contact-info__contact-type.ci-email .pv-contact-info__contact-item').text()
                                         };
                                         console.log(nameAndEamil);
                                         return nameAndEamil;
