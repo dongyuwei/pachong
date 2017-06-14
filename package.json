@@ -1,0 +1,20 @@
+{
+  "name": "pachong",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">= v8.1.0"
+  },
+  "description": "pachong",
+  "scripts": {
+    "serve": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dongyuwei/pachong.git"
+  },
+  "author": "newdongyuwei@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "nightmare": "^2.10.0"
+  }
+}
